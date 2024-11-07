@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lý Thuyết</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4358a0;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .lesson-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .pdf-viewer {
+            width: 100%;
+            height: 600px;
+            margin-bottom: 20px;
+        }
+        .btn-exercise {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .btn-exercise:hover {
+            background-color: #005f73;
+        }
+        .table-of-contents {
+            margin-top: 20px;
+        }
+        .toc-item {
+            margin: 5px 0;
+            padding-left: 10px;
+            font-size: 16px;
+        }
+        .toc-item a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .toc-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lý Thuyết</h1>
+</header>
+
+<div class="container">
+    <div class="lesson-title">
+        <label for="lesson-name">Bài 1: Cơ bản về HTML </label>
+    </div>
+
+    <div class="pdf-container">
+        <embed class="pdf-viewer" src="your-file.pdf" type="application/pdf" />
+    </div>
+
+    <button class="btn-exercise" onclick="window.location.href = 'bai-tap.html';">Chuyển sang làm bài tập</button>
+
+    <div class="table-of-contents">
+        <h3>Mục Lục Các Bài Lý Thuyết:</h3>
+        <div class="toc-item"><a href="#lesson1">Bài học 1:</a></div>
+        <div class="toc-item"><a href="#lesson2">Bài học 2:</a></div>
+        <div class="toc-item"><a href="#lesson3">Bài học 3:</a></div>
+        <div class="toc-item"><a href="#lesson1">Bài học 4:</a></div>
+        <div class="toc-item"><a href="#lesson2">Bài học 5:</a></div>
+
+        <!-- Thêm các bài học khác ở đây -->
+    </div>
+</div>
+
+</body>
+</html>
